@@ -1,0 +1,54 @@
+{
+  "name": "runcrate",
+  "engine": "openai",
+  "display_name": "Runcrate",
+  "description": "Runcrate: open models are free with your GitHub account",
+  "api_key_env": "RUNCRATE_API_KEY",
+  "base_url": "https://api.runcrate.ai/v1/chat/completions",
+  "models": [
+    {
+      "name": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "context_limit": 1048576,
+      "input_token_cost": 1.47e-07,
+      "output_token_cost": 4.41e-07,
+      "cache_read_token_cost": 4.41e-09
+    },
+    {
+      "name": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "context_limit": 1048576,
+      "input_token_cost": 1.029e-07,
+      "output_token_cost": 3.087e-07,
+      "cache_read_token_cost": 2.058e-09
+    },
+    {
+      "name": "zai-org/GLM-5.3",
+      "context_limit": 1048576,
+      "input_token_cost": 5.90625e-07,
+      "output_token_cost": 2.625e-06,
+      "cache_read_token_cost": 1.3125e-07
+    },
+    {
+      "name": "zai-org/GLM-5.3-Flash",
+      "context_limit": 1048576,
+      "input_token_cost": 1.575e-07,
+      "output_token_cost": 5.25e-07,
+      "cache_read_token_cost": 3.15e-08
+    },
+    {
+      "name": "Qwen/Qwen3.8-Flash",
+      "context_limit": 1000000,
+      "input_token_cost": 1.1865e-07,
+      "output_token_cost": 4.011e-07,
+      "cache_read_token_cost": 1.265565e-08
+    },
+    {
+      "name": "openai/gpt-oss-120b",
+      "context_limit": 131072,
+      "input_token_cost": 3.885e-08,
+      "output_token_cost": 1.785e-07,
+      "cache_read_token_cost": 5.8275e-09
+    }
+  ],
+  "supports_streaming": true,
+  "requires_auth": true
+}
